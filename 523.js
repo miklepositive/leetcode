@@ -1,5 +1,6 @@
 /**
- * #523 Leetcode
+ * Task: #523 Leetcode
+ * Time: spent 3 hours
  * @param {number[]} nums
  * @return {number}
  */
