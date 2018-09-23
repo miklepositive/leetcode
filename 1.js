@@ -25,8 +25,8 @@ var twoSum = function(nums, target) {
   for (var i = 0; i < nums.length && !areNumbersFound; i++) {
     for (var j = 1; j < nums.length; j++) {
       if (nums[i] + nums[j] == target) {
-        arrayNumbers.push(nums[i]);
-        arrayNumbers.push(nums[j]);
+        arrayNumbers.push(i);
+        arrayNumbers.push(j);
         areNumbersFound = true;
         break;
       }
