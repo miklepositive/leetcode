@@ -23,7 +23,7 @@ var twoSum = function(nums, target) {
   var arrayNumbers = [];
   var areNumbersFound = false;
   for (var i = 0; i < nums.length && !areNumbersFound; i++) {
-    for (var j = 1; j < nums.length; j++) {
+    for (var j = i + 1; j < nums.length; j++) {
       if (nums[i] + nums[j] == target) {
         arrayNumbers.push(i);
         arrayNumbers.push(j);
@@ -39,6 +39,9 @@ var testArray = [1, 2, 5, 11, 23];
 var target = 7;
 var testArray1 = [5, 3, 17, 11, 32, 2];
 var target1 = 13;
+var testArray2 = [2, 5, 5, 11];
+var target2 = 10;
 
 console.log(twoSum(testArray, target));
 console.log(twoSum(testArray1, target1));
+console.log(twoSum(testArray2, target2));
